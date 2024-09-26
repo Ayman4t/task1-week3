@@ -46,6 +46,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: -30px;
 }
 .header-content  .brand {
     font-size: 32px;
@@ -129,20 +131,45 @@ nav ul#user_info li{
     margin: 0px 10px;
     position: relative;
 }
+
 nav ul#user_info li .badge {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    background-color: red;
-    color: #fff;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    top:-10px;
-    right:-10px;
+    position: absolute; /* Position the badge relative to the .cartt icon */
+    top: -8px; /* Adjust this value to move the badge up */
+    right: -8px; /* Adjust this value to move the badge to the right */
+    background-color: red; /* Set the background color of the badge */
+    color: white; /* Set the text color of the badge */
+    border-radius: 50%; /* Make the badge circular */
+    padding: 2px 6px; /* Adjust the size of the badge */
+    font-size: 12px; /* Adjust the font size if necessary */
+    line-height: 1; 
     font-size: 13px;
     display: none;
+    margin-top: 10px;
+    
+   
 }
+.shopping_cart {
+    position: relative;
+    /* Make the parent container a reference for the badge */
+}
+
+.cart-link {
+    display: inline-block; /* Ensures the icon and badge are treated together */
+    position: relative; /* Create a positioning context for the badge */
+     /* Add some padding to avoid overlap */
+}
+
+.cartt {
+    font-size: 24px; /* Adjust icon size */
+    margin-top: 10px;
+    
+}
+
+.badge-custom sup {
+    font-size: 10px; /* Smaller size for superscript */
+    vertical-align: top; /* Align superscript vertically */
+}
+
 
 /* styles.css */
 body {
@@ -235,6 +262,13 @@ body {
 }
 
 @media (max-width: 768px) {
+    .headnav {
+        background-color: #000;
+    }
+    .headnav ul{
+        display: flex;
+        flex-direction: column;
+    }
     .home div {
         display: flex;
         flex-direction: column;
@@ -248,8 +282,8 @@ body {
 
     .product_item_img {
         width: 40%;
+         
         margin-top: 20px;
-        height: 80px;
     }
 
     #search {
@@ -270,7 +304,7 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: 20px;
-      height: auto;
+        height: 300px;
 
     }
 
@@ -284,14 +318,19 @@ body {
 
     }
 
-    .product_item .remove_to_cart {
+    .product_item .add_to_cart {
         display: inline;
         width: 90px;
-        margin-left: -60px;
+        margin: 20px 0;
+        /* margin-left: -60px; */
     }
 
     .loveCart {
         display: inline;
       
     }
+    .header-content{
+        margin-top: -10px;
+    }
 }
+

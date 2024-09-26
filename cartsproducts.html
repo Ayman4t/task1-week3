@@ -15,22 +15,22 @@
 
     <header>
 
-        <div class=" navbar navbar-expand-sm navbar-dark ">
+        <div class="navbar navbar-expand-sm navbar-dark ">
             <div class="container  header-content">
                 <!-- Brand Logo -->
                 <a href="index.html" class="brand">Shopping Cart</a>
 
                 <!-- Toggler Button for Mobile -->
-                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Collapsible Navigation Menu -->
-                <div class="collapse navbar-collapse d-sm-flex flex-sm-column bg-dark" id="mynavbar">
+                <div class="collapse navbar-collapse d-sm-flex flex-sm-column headnav" id="mynavbar">
                     <!-- Navigation for authentication links -->
                     <nav id="auth-nav" class="mb-3">
-                        <ul id="links" class="nav flex-column">
+                        <ul id="links" class="nav ">
                             <li class="nav-item"><a class="nav-link" href="login.html">Sign in</a></li>
                             <li class="nav-item"><a class="nav-link" href="register.html">Sign up</a></li>
                         </ul>
@@ -38,22 +38,24 @@
 
                     <!-- Navigation for user info and cart -->
                     <nav id="user-nav" class="mb-3">
-                        <ul id="user_info" class="nav flex-column">
+                        <ul id="user_info" class="nav ">
                             <li class="nav-item"><a class="nav-link" href="#" id="user">User Name</a></li>
-                            <li class="nav-item shopping_cart">
-                                <a class="nav-link" href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="badge">3</span>
-                                </a>
+                            <li class="shopping_cart mt-2">
+                                <span class="badge badge-custom">
+                                    2<sup>3</sup>
+                                </span>
+                                <i class="fas fa-shopping-cart cartt"></i>
+                           
+                                
                                 <div class="carts_products p-2 border rounded">
                                     <div>
                                         <!-- Cart products can be listed here -->
                                     </div>
-                                    <a href="cartsproducts.html" class="btn btn-primary btn-sm mt-2">View All
-                                        Products</a>
+                                    <a href="cartsproducts.html" class="btn btn-primary btn-sm mt-2">View All Products</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#" id="logout">Log Out</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link mt-2    " href="#" id="logout">Log Out</a></li>
                         </ul>
                     </nav>
                 </div>

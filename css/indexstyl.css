@@ -65,10 +65,7 @@ nav li a {
     margin-top: 20px;
     width: 100%;
 }
-.shopping_cart{
-    display: flex;
-    justify-content: flex-start;
-}
+
 .product_item {
     display: flex;
 
@@ -346,6 +343,9 @@ body {
     .loveCart {
         display: inline;
       
+    }
+    .header-content{
+        margin-top: -10px;
     }
 }
 

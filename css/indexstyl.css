@@ -1,0 +1,351 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 70px;
+    background-color: grey;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+   
+}
+
+.header-content .brand {
+    font-size: 32px;
+    text-decoration: none;
+    color: #3807c9;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    min-width: 80px;
+    padding: 5px;
+    margin: 0px 5px;
+    
+}
+
+#search {
+    width: 500px;
+}
+
+#search_by_name {
+    width: 500px;
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+.products {
+
+    display: flex;
+
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 100%;
+}
+.shopping_cart{
+    display: flex;
+    justify-content: flex-start;
+}
+.product_item {
+    display: flex;
+
+    justify-content: space-between;
+
+    border: 1px solid #ddd;
+    min-height: 290px;
+    margin-bottom: 10px;
+}
+
+.product_item_img {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.product_item_action {
+   
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.product_item .add_to_cart {
+    display: block;
+    margin-left: 40px;
+    background-color: rgb(62, 39, 238);
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product_item_desc {
+    margin-top: 110px;
+}
+
+.product_item .fav {
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    margin-left: auto;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+nav ul#user_info li i {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+nav ul#user_info li {
+    margin: 0px 10px;
+    position: relative;
+}
+
+nav ul#user_info li .badge {
+    position: absolute; /* Position the badge relative to the .cartt icon */
+    top: -8px; /* Adjust this value to move the badge up */
+    right: -8px; /* Adjust this value to move the badge to the right */
+    background-color: red; /* Set the background color of the badge */
+    color: white; /* Set the text color of the badge */
+    border-radius: 50%; /* Make the badge circular */
+    padding: 2px 6px; /* Adjust the size of the badge */
+    font-size: 12px; /* Adjust the font size if necessary */
+    line-height: 1; 
+    font-size: 13px;
+    display: none;
+    margin-top: 10px;
+    
+   
+}
+.shopping_cart {
+    position: relative;
+    /* Make the parent container a reference for the badge */
+}
+
+.cart-link {
+    display: inline-block; /* Ensures the icon and badge are treated together */
+    position: relative; /* Create a positioning context for the badge */
+     /* Add some padding to avoid overlap */
+}
+
+.cartt {
+    font-size: 24px; /* Adjust icon size */
+    margin-top: 10px;
+    
+}
+
+.badge-custom sup {
+    font-size: 10px; /* Smaller size for superscript */
+    vertical-align: top; /* Align superscript vertically */
+}
+
+
+/* /////////////////////////////////// */
+.carts_products {
+    position: absolute;
+    width: 180px;
+    transform: translate(-40px, 0);
+    background-color: #eaeaea;
+    top: 56px;
+    padding: 10px;
+    border: 1px solid green;
+    display: none;
+    z-index: 99;
+}
+
+.carts_products a {
+    display: block;
+    color: #000;
+    margin: 4px 0;
+    padding: 0;
+    background-color: darkgreen;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product_item {
+    flex: 0 1 calc(30% - 20px);
+    /* Adjusted width for better spacing */
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: .3s;
+
+}
+
+.product_item:hover {
+    transform: scale(1.1);
+    border-color: #3807c9;
+}
+
+.color {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+
+.disc {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.product_item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product_item_desc {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product_item_action {
+    margin-top: 10px;
+}
+
+.badge {
+    display: none;
+
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+#user {
+    margin-right: 400px;
+    font-size: 28px;
+    color: #baa3ff;
+    text-decoration: none;
+}
+
+.loveCart {
+    cursor: pointer;
+    color: hsl(186, 8%, 76%);
+
+}
+
+@media (max-width: 768px) {
+    .headnav {
+        background-color: #000;
+    }
+    .headnav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .home div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_item_img {
+        width: 40%;
+         
+        margin-top: 20px;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    #search_by_name {
+        width: 100%;
+    }
+
+    .product_item_desc {
+        margin-top: 80px;
+    }
+
+    .product_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        height: 300px;
+
+    }
+
+    .product_item_action {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+
+    }
+
+    .product_item .add_to_cart {
+        display: inline;
+        width: 90px;
+        margin: 20px 0;
+        /* margin-left: -60px; */
+    }
+
+    .loveCart {
+        display: inline;
+      
+    }
+}
+
